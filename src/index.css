@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #1a202c;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #1a56db;
+  color: white;
+  width: 100%;
+}
+
+.btn-primary:hover { background: #1e429f; }
+
+.btn-secondary {
+  background: white;
+  color: #1a56db;
+  border: 2px solid #1a56db;
+  width: 100%;
+}
+
+.btn-secondary:hover { background: #ebf5ff; }
+
+.btn-danger {
+  background: #e02424;
+  color: white;
+}
+
+.btn-danger:hover { background: #c81e1e; }
+
+.btn-success {
+  background: #057a55;
+  color: white;
+  width: 100%;
+}
+
+.btn-success:hover { background: #046c4e; }
+
+input, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #1a56db;
+}
+
+.navbar {
+  background: #1e3a8a;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar span {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-blue { background: #ebf5ff; color: #1a56db; }
+.badge-green { background: #def7ec; color: #057a55; }
+.badge-red { background: #fde8e8; color: #e02424; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #1e3a8a;
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover { background: #f9fafb; }
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 3rem;
+}
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.portal-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.portal-card:hover {
+  transform: translateY(-4px);
+  border-color: #1a56db;
+}
+
+.portal-card .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.portal-card h2 {
+  font-size: 1.3rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.portal-card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.seat-card {
+  background: #1e3a8a;
+  color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.seat-card .label {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.seat-card .value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0.25rem 0 1rem;
+}
+
+.hall-map {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.bench {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.4rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.bench.highlighted {
+  background: #1a56db;
+  color: white;
+  border-color: #1a56db;
+}
+
+.bench .sides {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+
+.bench .side {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+.bench .side.active {
+  background: #1a56db;
+  color: white;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
