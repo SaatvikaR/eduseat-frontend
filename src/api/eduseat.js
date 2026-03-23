@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/api';
+const BASE_URL = 'https://eduseat-backend.onrender.com/api';
 
 export const addHall = (hall) => axios.post(`${BASE_URL}/halls`, hall);
 export const getHalls = () => axios.get(`${BASE_URL}/halls`);
